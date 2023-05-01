@@ -1,0 +1,9 @@
+pandas 1.4.2
+numpy 1.22.4
+nltk  3.7
+playsound  1.2.2    
+speech_recognition  3.8.1
+googletrans  3.1.0-alpha or 3.1.0a0
+gtts   2.2.4
+os
+sys

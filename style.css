@@ -1,0 +1,285 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/****************************utility classes**************************************/
+.flex-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-3{
+    display: flex;
+}
+.flex-dir{
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
+.grid-1-col{
+    grid-template-columns: 1fr;
+}
+.grid-2-col{
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3-col{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4-col{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-5-col{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.gap08{
+    gap: 0.8rem;
+}
+.gap16{
+    gap: 1.6rem;
+}
+.gap24{
+    gap: 2.4rem;
+}
+.gap32{
+    gap: 3.2rem;
+}
+.gap48{
+    gap: 4.8rem;
+}
+.gap64{
+    gap: 6.4rem;
+}
+.gap72{
+    gap: 7.2rem;
+}
+.gap96{
+    gap: 9.6rem;
+}
+
+.pad08{
+    padding: 0.8rem;
+}
+.pad16{
+    padding: 1.6rem;
+}
+.pad24{
+    padding: 2.4rem;
+}
+.pad32{
+    padding: 3.2rem;
+}
+.pad48{
+    padding: 4.8rem;
+}
+.pad64{
+    padding: 6.4rem;
+}
+.pad72{
+    padding: 7.2rem;
+}
+.pad96{
+    padding: 9.6rem;
+}
+.center{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/*****************************bot code /*******************/
+.chat-container{
+    max-width: 33rem;
+    margin: 0 auto;
+
+}
+.logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.upper-container{
+    height: 10vh;
+    padding: 0 1.6rem;
+    background-color: coral;
+}
+.middle-container{
+    height: 60vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: cornsilk;
+}
+.chat-form{
+    /* height: 10vh; */
+    padding: 1.6rem 1.6rem;
+    background-color: coral;
+}
+.emoji{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.input,.send{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.input:focus{
+    outline: 0.5rem solid cornsilk;
+}
+.send{
+    background-color: cornsilk;
+    color: black;
+}
+.message{
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background-color: coral;
+    display: inline-block;
+    border-radius: 1rem;
+    color: cornsilk;
+}
+.middle-container{
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+}
+
+.hidden{
+    display: none;
+}
+.mic,.play,.lang{
+    border: none;
+    padding: 0.5rem;
+    background-color: cornsilk;
+    color: #000;
+    border-radius: 0.5rem;
+}
+.chater{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/* body{
+    position: relative;
+}
+.chat-section {
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+} */
+body{
+    position: relative;
+}
+.chat-opener{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 0 0 1rem #000;
+    border-radius: 50%;
+
+}
+.chater:hover,.chater:active{
+    transform: scale(1.1);
+
+}
+.opa{
+    opacity: 0;
+}
+.opa1{
+    opacity: 1;
+}
+/* .server{
+    align-items: baseline;
+    justify-content: baseline;
+} */
+.btn:link,.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: rgba(255, 127, 80, 0.532);
+    border-radius: 10rem;
+    color: #000;
+    border: 0.2rem solid coral;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.lower-container{
+    position: relative;
+}
+.default-btns{
+    left:0;
+    top: -110%;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    background-color: rgb(254, 245, 210);
+    padding: 1rem 0;
+    
+}
+.btn-cta,.liveBtn{
+    border: none;
+    padding: 1rem 1rem;
+    background-color: rgba(255, 127, 80, 0.532);
+    border: 0.2rem solid coral;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+.liveBtn{
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 68, 0);
+    color: #fff;
+    border: none;
+
+}
+/********fair list********/
+.fair-list{
+    list-style: none;
+    
+}
+.fair-list li{
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2rem;
+}
+.fair-container,.contact-container{
+    background-color: rgba(255, 127, 80, 0.322);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1.6rem;
+    border: 0.2rem solid coral;
+    
+}
+.li-name{
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 68, 0);
+    border-radius: 0.5rem;
+    color: #fff;
+}
+.number{
+    font-size: 1.6rem;
+}
+.number-value{
+    font-size: 1.6rem;
+}
